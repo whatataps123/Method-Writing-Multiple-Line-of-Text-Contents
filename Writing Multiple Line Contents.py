@@ -10,8 +10,13 @@
 # Are there more lines y/n? n 
 
 # pseudocode
+#define a function
+def text():
 # open mylife.txt (read) and write mode as text_input
+    with open("mylife.txt", "w") as text_input:
 # use loop to execute the block of code repeatedly
 # append the input to mylife.txt
 # print the output
 # close the file
+
+        text()
