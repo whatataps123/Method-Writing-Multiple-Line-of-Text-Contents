@@ -24,9 +24,10 @@ def text():
                 break
 # print the output
     print("Inputted lines: ")
-    #read each line by line
-    for line in text_input:
-        print(line)
+    with open("mylife.txt") as text_input:
+        #read each line by line
+        for line in text_input:
+            print(line.strip())
 # close the file
 
 text()
