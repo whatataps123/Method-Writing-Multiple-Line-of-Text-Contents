@@ -15,8 +15,14 @@ def text():
 # open mylife.txt (read) and write mode as text_input
     with open("mylife.txt", "w") as text_input:
 # use loop to execute the block of code repeatedly
-# append the input to mylife.txt
+        while True:
+            line = input("Enter line: ")
+            # write the input to mylife.txt
+            text_input.write(line + "\n")
+            add_line = input("Are there more lines y/n? ")
+            if add_line.lower() != "y":
+                break
 # print the output
 # close the file
 
-        text()
+text()
