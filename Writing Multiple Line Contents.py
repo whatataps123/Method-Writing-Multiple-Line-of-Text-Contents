@@ -23,9 +23,10 @@ def text():
             if add_line.lower() != "y":
                 break
 # print the output
-        print("Inputted lines: ")
-        for line in line:  
-            print(line)
+    print("Inputted lines: ")
+    #read each line by line
+    for line in text_input:
+        print(line)
 # close the file
 
 text()
